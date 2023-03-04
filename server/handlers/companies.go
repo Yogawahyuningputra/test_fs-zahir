@@ -89,7 +89,7 @@ func (h *handlerCompanies) CreateCompany(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, dto.SuccessResult{Code: http.StatusOK, Data: companies})
 }
-
+   
 func (h *handlerCompanies) DeleteCompany(c echo.Context) error {
 
 	id, _ := strconv.Atoi(c.Param("id"))

@@ -33,12 +33,12 @@ const ListCompanies = () => {
 
                             <tr>
                                 <td key={index}>{index + 1}</td>
-                                <td>{data?.user?.className}</td>
+                                <td>{data?.user?.name}</td>
                                 <td>{data?.name}</td>
+                                <td>{data?.variants?.name}</td>
+                                <td>{data?.status}</td>
                                 <td>{data?.start_date}</td>
                                 <td>{data?.expired_date}</td>
-                                <td>{data?.variants?.name}</td>
-                                <td>@{data?.status}</td>
                             </tr>
                         ))}
 
